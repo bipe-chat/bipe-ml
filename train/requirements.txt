@@ -1,0 +1,6 @@
+# Python 3.12. Pinned; change one at a time.
+torch==2.9.0
+transformers==4.57.1
+onnx==1.19.1
+onnxruntime==1.23.2
+numpy==2.3.4

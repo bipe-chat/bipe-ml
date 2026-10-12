@@ -1,0 +1,10 @@
+{
+  "name": "proseio-ml",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "check": "node eval/check.mjs",
+    "baseline": "node eval/baseline.mjs"
+  }
+}

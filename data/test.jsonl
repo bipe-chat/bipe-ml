@@ -1,0 +1,80 @@
+{"text":"oie mamis, to com outro numero agora, o meu foi roubado no onibus","label":"scam","kind":"falsoParente"}
+{"text":"Pai, sou eu. Perdi o celular ontem. Esse é o zap provisório","label":"scam","kind":"falsoParente"}
+{"text":"mãe vc ta ocupada? preciso muito de um favor, é coisa rápida","label":"scam","kind":"falsoParente"}
+{"text":"tio, é o Gui, pode transferir 1.500 pro meu colega? te explico a noite","label":"scam","kind":"falsoParente"}
+{"text":"vo me ajuda, preciso quitar uma parcela que ta atrasada e meu banco ta bloqueado no aparelho novo","label":"scam","kind":"falsoParente"}
+{"text":"mae a conta ta no nome do dono da loja, pode mandar direto pra ele","label":"scam","kind":"falsoParente"}
+{"text":"oi pai, numero novo aqui. nao responde no antigo","label":"scam","kind":"falsoParente"}
+{"text":"amiga, é a Fê, to num aperto, consegue me passar 600 hoje? sexta sem falta te devolvo","label":"scam","kind":"falsoParente"}
+{"text":"mãe esse é meu whats de agora, salva como Dudu","label":"scam","kind":"falsoParente"}
+{"text":"Prezado(a), aqui é do departamento antifraude do seu banco. Uma transação de R$ 3.200 está pendente","label":"scam","kind":"fakeBank"}
+{"text":"Santander: acesso bloqueado após tentativas incorretas. Desbloqueie pelo link seguro","label":"scam","kind":"fakeBank"}
+{"text":"Bom dia, sou gerente da sua agência. Precisamos fazer uma validação por chamada de vídeo","label":"scam","kind":"fakeBank"}
+{"text":"Para cancelar a compra não autorizada, transfira o saldo para a conta segura que vou te passar","label":"scam","kind":"fakeBank"}
+{"text":"PicPay: detectamos login em novo dispositivo. Se não foi você, responda com seu e-mail e senha","label":"scam","kind":"fakeBank"}
+{"text":"foi mal, digitei teu numero sem querer no app, chegou um codigo ai? manda pra mim","label":"scam","kind":"codeTheft"}
+{"text":"Equipe de segurança do WhatsApp: sua conta será desativada. Envie o código de verificação","label":"scam","kind":"codeTheft"}
+{"text":"Aqui é da clínica, para confirmar seu exame amanhã responda com o código que enviamos","label":"scam","kind":"codeTheft"}
+{"text":"Oi, sou do grupo de vendas do bairro, vou te adicionar como admin, me manda o número que aparecer","label":"scam","kind":"codeTheft"}
+{"text":"Ganhe até R$ 400 por dia dando like em vídeos do YouTube. Interessado(a)?","label":"scam","kind":"fakeJob"}
+{"text":"Trabalho simples pelo celular, comissão por tarefa. Para continuar ative sua conta com R$ 80","label":"scam","kind":"fakeJob"}
+{"text":"Oi, sou da Amazon. Estamos contratando avaliadores de produtos, pagamento diário","label":"scam","kind":"fakeJob"}
+{"text":"Moto em ótimo estado, R$ 4.000. Estou viajando, só envio depois do pagamento","label":"scam","kind":"fakeSale"}
+{"text":"Já paguei pelo app, agora vc precisa liberar o valor pagando a taxa de segurança","label":"scam","kind":"fakeSale"}
+{"text":"Filhotes de golden, entrego em todo o Brasil. Reserva com 30% no pix","label":"scam","kind":"fakeSale"}
+{"text":"Receita Federal: seu CPF será cancelado por pendência. Regularize hoje para evitar bloqueio","label":"scam","kind":"fakeBenefit"}
+{"text":"Você ganhou um cupom de R$ 500 no aniversário do Magalu. Resgate no link antes que expire","label":"scam","kind":"fakeBenefit"}
+{"text":"Pé-de-Meia: seu pagamento está disponível, confirme seus dados para receber","label":"scam","kind":"fakeBenefit"}
+{"text":"Multa de trânsito com 40% de desconto pagando hoje pelo QR code","label":"scam","kind":"fakeBenefit"}
+{"text":"Sua compra internacional foi tributada. Pague o imposto para não ser devolvida","label":"scam","kind":"fakeDelivery"}
+{"text":"entregador aqui, to na sua porta mas tem taxa de 9,90. faz o pix que eu deixo","label":"scam","kind":"fakeDelivery"}
+{"text":"opa mandei 300 errado pra você, pode estornar pra essa outra chave?","label":"scam","kind":"overpayment"}
+{"text":"Olha o print, já transferi. Pode enviar hoje ainda?","label":"scam","kind":"overpayment"}
+{"text":"Plataforma nova pagando 3% ao dia, é só indicar e depositar. Vem que ainda dá tempo","label":"scam","kind":"investment"}
+{"text":"Crédito pré-aprovado de 15 mil, para liberar pague o seguro de R$ 390","label":"scam","kind":"investment"}
+{"text":"Informamos que a conta da associação de moradores mudou. Novo pix abaixo","label":"scam","kind":"fakeBoleto"}
+{"text":"Suporte Claro: sua fatura está em atraso e o serviço será cortado em 2 horas","label":"scam","kind":"fakeSupport"}
+{"text":"Aqui é do suporte do Instagram. Sua conta foi denunciada, confirme sua identidade","label":"scam","kind":"fakeSupport"}
+{"text":"meu bem, a alfândega pediu uma taxa pra liberar o pacote que te mandei de presente","label":"scam","kind":"romance"}
+{"text":"Campanha para o tratamento do Joãozinho. Toda ajuda é bem-vinda, chave no perfil","label":"scam","kind":"fakeCharity"}
+{"text":"Oi, aqui é o Carlos, gerente da loja. Troquei de número. O fornecedor tá pedindo o pagamento antecipado","label":"scam","kind":"falsoParente"}
+{"text":"mae chego tarde hoje, tem treino","label":"benign","kind":"family"}
+{"text":"pai, me manda o pix da conta de luz que eu pago daqui","label":"benign","kind":"family"}
+{"text":"vó, tô com saudade! semana que vem passo aí","label":"benign","kind":"family"}
+{"text":"filho, comprei teu presente, não abre antes do natal","label":"benign","kind":"family"}
+{"text":"mãe a escola pediu 20 reais pro passeio, pode me dar amanhã?","label":"benign","kind":"family"}
+{"text":"irmã, a mãe falou pra gente rachar o mercado, deu 180","label":"benign","kind":"family"}
+{"text":"amor, já paguei o boleto do cartão","label":"benign","kind":"family"}
+{"text":"galera, a cerveja deu 22 pra cada, chave do Tiago é o email dele","label":"benign","kind":"friends"}
+{"text":"perdi o ônibus, vou chegar atrasado","label":"benign","kind":"friends"}
+{"text":"tão falando de golpe do pix no grupo da família, cuidado","label":"benign","kind":"friends"}
+{"text":"me lembra de te pagar o café","label":"benign","kind":"friends"}
+{"text":"quem vai no aniversário da Lari levar o que?","label":"benign","kind":"friends"}
+{"text":"o banco mudou o app, achei horrível","label":"benign","kind":"friends"}
+{"text":"me empresta o carregador?","label":"benign","kind":"friends"}
+{"text":"Brigadeiro gourmet, caixa com 12 por R$ 30. Encomendas até quinta","label":"benign","kind":"seller"}
+{"text":"Seu cabelo está agendado para sábado 10h. Até lá!","label":"benign","kind":"seller"}
+{"text":"Chegou mercadoria nova na loja, vem conferir","label":"benign","kind":"seller"}
+{"text":"Pode pagar na entrega, aceito cartão e pix","label":"benign","kind":"seller"}
+{"text":"Condôminos: a limpeza da caixa d'água será no sábado","label":"benign","kind":"condo"}
+{"text":"O elevador social está em manutenção, usem o de serviço","label":"benign","kind":"condo"}
+{"text":"Encomenda do apto 302 está na portaria","label":"benign","kind":"condo"}
+{"text":"Festa junina da escola sábado, cada família leva um prato","label":"benign","kind":"school"}
+{"text":"A lista de material está no site da escola","label":"benign","kind":"school"}
+{"text":"Prova de matemática adiada para segunda","label":"benign","kind":"school"}
+{"text":"Bom dia, o cliente aprovou o orçamento","label":"benign","kind":"work"}
+{"text":"Preciso que você assine o contrato até amanhã, é urgente","label":"benign","kind":"work"}
+{"text":"O pagamento dos fornecedores sai na sexta pelo financeiro","label":"benign","kind":"work"}
+{"text":"Reunião cancelada, vamos falar por e-mail","label":"benign","kind":"work"}
+{"text":"Olá, sou a fisioterapeuta indicada pelo Dr. André, podemos marcar a primeira sessão?","label":"benign","kind":"numberChange"}
+{"text":"Oi, sou a mãe da Sofia, colega da sua filha. Vamos marcar um lanche?","label":"benign","kind":"numberChange"}
+{"text":"Esse é o número da recepção da clínica, para remarcar é só chamar aqui","label":"benign","kind":"numberChange"}
+{"text":"Oi, é o Rodrigo do futebol, peguei seu contato no grupo","label":"benign","kind":"numberChange"}
+{"text":"o pix caiu certinho, obrigado!","label":"benign","kind":"seller"}
+{"text":"mãe, a Ana perguntou se pode dormir aqui","label":"benign","kind":"family"}
+{"text":"recebi uma mensagem estranha do banco, vou ligar na agência pra ver","label":"benign","kind":"friends"}
+{"text":"o código da sala de reunião é 1234","label":"benign","kind":"work"}
+{"text":"Quem quiser participar do bolão da copa, 10 reais com o Zé","label":"benign","kind":"friends"}
+{"text":"amanhã tem vacinação no posto, levem a carteirinha","label":"benign","kind":"condo"}
+{"text":"pai o carro fez barulho de novo, levei no mecânico","label":"benign","kind":"family"}
+{"text":"te devolvo a forma do bolo domingo","label":"benign","kind":"friends"}
