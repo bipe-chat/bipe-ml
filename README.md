@@ -1,6 +1,6 @@
 # proseio-ml
 
-On-device models for Proseio. First model: the pt-BR scam classifier that extends security rule 9 ([proseio#121](https://github.com/proseio/proseio/issues/121)). Research: [proseio/docs/ai.md](https://github.com/proseio/proseio/blob/main/docs/ai.md).
+On-device models for Proseio. First model: the pt-BR scam classifier that extends security rule 9 ([proseio#121](https://github.com/bipe-chat/proseio/issues/121)). Research: [proseio/docs/ai.md](https://github.com/bipe-chat/proseio/blob/main/docs/ai.md).
 
 Status (12 October 2026): labelled set and rule baseline done. Training not run: the dev Mac has no ML toolchain.
 
