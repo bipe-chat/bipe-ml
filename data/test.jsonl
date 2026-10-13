@@ -5,39 +5,39 @@
 {"text":"vo me ajuda, preciso quitar uma parcela que ta atrasada e meu banco ta bloqueado no aparelho novo","label":"scam","kind":"falsoParente"}
 {"text":"mae a conta ta no nome do dono da loja, pode mandar direto pra ele","label":"scam","kind":"falsoParente"}
 {"text":"oi pai, numero novo aqui. nao responde no antigo","label":"scam","kind":"falsoParente"}
-{"text":"amiga, é a Fê, to num aperto, consegue me passar 600 hoje? sexta sem falta te devolvo","label":"scam","kind":"falsoParente"}
+{"text":"amiga, é a Fê, to num aperto, consegue me passar 600 hoje? sexta sem falta te devolvo","label":"scam","kind":"fakeAcquaintance"}
 {"text":"mãe esse é meu whats de agora, salva como Dudu","label":"scam","kind":"falsoParente"}
-{"text":"Prezado(a), aqui é do departamento antifraude do seu banco. Uma transação de R$ 3.200 está pendente","label":"scam","kind":"fakeBank"}
-{"text":"Santander: acesso bloqueado após tentativas incorretas. Desbloqueie pelo link seguro","label":"scam","kind":"fakeBank"}
-{"text":"Bom dia, sou gerente da sua agência. Precisamos fazer uma validação por chamada de vídeo","label":"scam","kind":"fakeBank"}
-{"text":"Para cancelar a compra não autorizada, transfira o saldo para a conta segura que vou te passar","label":"scam","kind":"fakeBank"}
-{"text":"PicPay: detectamos login em novo dispositivo. Se não foi você, responda com seu e-mail e senha","label":"scam","kind":"fakeBank"}
-{"text":"foi mal, digitei teu numero sem querer no app, chegou um codigo ai? manda pra mim","label":"scam","kind":"codeTheft"}
-{"text":"Equipe de segurança do WhatsApp: sua conta será desativada. Envie o código de verificação","label":"scam","kind":"codeTheft"}
-{"text":"Aqui é da clínica, para confirmar seu exame amanhã responda com o código que enviamos","label":"scam","kind":"codeTheft"}
-{"text":"Oi, sou do grupo de vendas do bairro, vou te adicionar como admin, me manda o número que aparecer","label":"scam","kind":"codeTheft"}
+{"text":"Prezado(a), aqui é do departamento antifraude do seu banco. Uma transação de R$ 3.200 está pendente","label":"scam","kind":"fakeCall"}
+{"text":"Santander: acesso bloqueado após tentativas incorretas. Desbloqueie pelo link seguro","label":"scam","kind":"phishing"}
+{"text":"Bom dia, sou gerente da sua agência. Precisamos fazer uma validação por chamada de vídeo","label":"scam","kind":"fakeCall"}
+{"text":"Para cancelar a compra não autorizada, transfira o saldo para a conta segura que vou te passar","label":"scam","kind":"fakeCall"}
+{"text":"PicPay: detectamos login em novo dispositivo. Se não foi você, responda com seu e-mail e senha","label":"scam","kind":"phishing"}
+{"text":"foi mal, digitei teu numero sem querer no app, chegou um codigo ai? manda pra mim","label":"scam","kind":"wrongCode"}
+{"text":"Equipe de segurança do WhatsApp: sua conta será desativada. Envie o código de verificação","label":"scam","kind":"numberTaken"}
+{"text":"Aqui é da clínica, para confirmar seu exame amanhã responda com o código que enviamos","label":"scam","kind":"numberTaken"}
+{"text":"Oi, sou do grupo de vendas do bairro, vou te adicionar como admin, me manda o número que aparecer","label":"scam","kind":"groupScam"}
 {"text":"Ganhe até R$ 400 por dia dando like em vídeos do YouTube. Interessado(a)?","label":"scam","kind":"fakeJob"}
 {"text":"Trabalho simples pelo celular, comissão por tarefa. Para continuar ative sua conta com R$ 80","label":"scam","kind":"fakeJob"}
 {"text":"Oi, sou da Amazon. Estamos contratando avaliadores de produtos, pagamento diário","label":"scam","kind":"fakeJob"}
 {"text":"Moto em ótimo estado, R$ 4.000. Estou viajando, só envio depois do pagamento","label":"scam","kind":"fakeSale"}
-{"text":"Já paguei pelo app, agora vc precisa liberar o valor pagando a taxa de segurança","label":"scam","kind":"fakeSale"}
-{"text":"Filhotes de golden, entrego em todo o Brasil. Reserva com 30% no pix","label":"scam","kind":"fakeSale"}
-{"text":"Receita Federal: seu CPF será cancelado por pendência. Regularize hoje para evitar bloqueio","label":"scam","kind":"fakeBenefit"}
-{"text":"Você ganhou um cupom de R$ 500 no aniversário do Magalu. Resgate no link antes que expire","label":"scam","kind":"fakeBenefit"}
-{"text":"Pé-de-Meia: seu pagamento está disponível, confirme seus dados para receber","label":"scam","kind":"fakeBenefit"}
-{"text":"Multa de trânsito com 40% de desconto pagando hoje pelo QR code","label":"scam","kind":"fakeBenefit"}
+{"text":"Já paguei pelo app, agora vc precisa liberar o valor pagando a taxa de segurança","label":"scam","kind":"fakeReceipt"}
+{"text":"Filhotes de golden, entrego em todo o Brasil. Reserva com 30% no pix","label":"scam","kind":"fakeShop"}
+{"text":"Receita Federal: seu CPF será cancelado por pendência. Regularize hoje para evitar bloqueio","label":"scam","kind":"fakeAgency"}
+{"text":"Você ganhou um cupom de R$ 500 no aniversário do Magalu. Resgate no link antes que expire","label":"scam","kind":"phishing"}
+{"text":"Pé-de-Meia: seu pagamento está disponível, confirme seus dados para receber","label":"scam","kind":"fakeAgency"}
+{"text":"Multa de trânsito com 40% de desconto pagando hoje pelo QR code","label":"scam","kind":"fakeAgency"}
 {"text":"Sua compra internacional foi tributada. Pague o imposto para não ser devolvida","label":"scam","kind":"fakeDelivery"}
 {"text":"entregador aqui, to na sua porta mas tem taxa de 9,90. faz o pix que eu deixo","label":"scam","kind":"fakeDelivery"}
-{"text":"opa mandei 300 errado pra você, pode estornar pra essa outra chave?","label":"scam","kind":"overpayment"}
-{"text":"Olha o print, já transferi. Pode enviar hoje ainda?","label":"scam","kind":"overpayment"}
+{"text":"opa mandei 300 errado pra você, pode estornar pra essa outra chave?","label":"scam","kind":"wrongPix"}
+{"text":"Olha o print, já transferi. Pode enviar hoje ainda?","label":"scam","kind":"fakeReceipt"}
 {"text":"Plataforma nova pagando 3% ao dia, é só indicar e depositar. Vem que ainda dá tempo","label":"scam","kind":"investment"}
-{"text":"Crédito pré-aprovado de 15 mil, para liberar pague o seguro de R$ 390","label":"scam","kind":"investment"}
+{"text":"Crédito pré-aprovado de 15 mil, para liberar pague o seguro de R$ 390","label":"scam","kind":"fakeLoan"}
 {"text":"Informamos que a conta da associação de moradores mudou. Novo pix abaixo","label":"scam","kind":"fakeBoleto"}
 {"text":"Suporte Claro: sua fatura está em atraso e o serviço será cortado em 2 horas","label":"scam","kind":"fakeSupport"}
 {"text":"Aqui é do suporte do Instagram. Sua conta foi denunciada, confirme sua identidade","label":"scam","kind":"fakeSupport"}
 {"text":"meu bem, a alfândega pediu uma taxa pra liberar o pacote que te mandei de presente","label":"scam","kind":"romance"}
 {"text":"Campanha para o tratamento do Joãozinho. Toda ajuda é bem-vinda, chave no perfil","label":"scam","kind":"fakeCharity"}
-{"text":"Oi, aqui é o Carlos, gerente da loja. Troquei de número. O fornecedor tá pedindo o pagamento antecipado","label":"scam","kind":"falsoParente"}
+{"text":"Oi, aqui é o Carlos, gerente da loja. Troquei de número. O fornecedor tá pedindo o pagamento antecipado","label":"scam","kind":"fakeAcquaintance"}
 {"text":"mae chego tarde hoje, tem treino","label":"benign","kind":"family"}
 {"text":"pai, me manda o pix da conta de luz que eu pago daqui","label":"benign","kind":"family"}
 {"text":"vó, tô com saudade! semana que vem passo aí","label":"benign","kind":"family"}

@@ -32,19 +32,21 @@ python -I train/train.py --model tgsc/debertina-xsmall --out build/debertina-xsm
 - **Source:** synthetic. Written by Claude (Opus 5.5) on 12 October 2026 from known Brazilian scam types and the rule 9 categories. No real user messages.
 - **Test set:** written apart from the train set with different wording. Never tune on it.
 - **Benign set:** hard negatives on purpose. Normal chat that talks about money, Pix, new numbers, urgency and codes.
-- **Size:** 183 train, 80 test. Too small for a shipped model. It proves the pipeline and gives a baseline. A shipped model needs thousands of rows: FraudWhatsApp.Br (licence pending), more synthetic data, and reviewed reports.
+- **13 October 2026 (bipe#175):** scam kinds moved to the golpe ids of `bipe-shared/product/scams.json`. Existing rows were relabelled one by one (for example a code request became `wrongCode` or `numberTaken`, a link to a fake bank page became `phishing`). 53 new train rows: scam examples for the golpes that had fewer than 3, and one hard negative per golpe.
+- **Size:** 236 train, 80 test. Too small for a shipped model. It proves the pipeline and gives a baseline. A shipped model needs thousands of rows: FraudWhatsApp.Br (licence pending), more synthetic data, and reviewed reports.
 - **Bias:** one author wrote train and test. Scores on this test set are optimistic for any model.
 
-Scam kinds: `falsoParente`, `fakeBank`, `codeTheft`, `fakeJob`, `fakeSale`, `fakeBenefit`, `fakeDelivery`, `overpayment`, `investment`, `fakeBoleto`, `fakeSupport`, `romance`, `fakeCharity`.
-Benign kinds: `family`, `friends`, `seller`, `condo`, `school`, `work`, `numberChange`.
+Scam kinds: the `id` of each golpe in `bipe-shared/product/scams.json` `types` (one list, bipe#175). `eval/data.mjs` reads them from there (`BIPE_SHARED` or the sibling folder) and fails on an unknown kind.
+Benign kinds: `family`, `friends`, `seller`, `condo`, `school`, `work`, `numberChange`, or a golpe id for a hard negative of that golpe.
+Every golpe needs at least 3 scam rows and 1 hard negative across train and test. `eval/data.mjs` fails otherwise.
 
-## Baseline: rule 9 as of bipe-shared `a5b1728`
+## Baseline: rule 9 as of bipe-shared `056ddd1`
 
 A message counts as flagged when `scamWarningKind()` returns any kind.
 
 | Set | Scams flagged | Normal messages flagged |
 |---|---|---|
-| train | 13/98 (13.3%) | 11/85 (12.9%) |
+| train | 17/122 (13.9%) | 12/114 (10.5%) |
 | test | 3/40 (7.5%) | 2/40 (5.0%) |
 
 - The rules target money requests with a Pix key, code or fixed phrase. Fake bank, fake job, fake sale, fake benefit and fake delivery messages get 0 flags. Most `falsoParente` paraphrases get past the fixed phrase list ("mudei de número", "zap novo", "chip novo").
