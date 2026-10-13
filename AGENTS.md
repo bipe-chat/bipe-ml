@@ -1,6 +1,6 @@
-# proseio-ml: agent notes
+# bipe-ml: agent notes
 
-On-device models for Proseio. See README.md.
+On-device models for Bipe. See README.md.
 
 - Data rows: `text`, `label`, `kind` only. `node eval/check.mjs` must pass before a commit.
 - Never put real user messages in `data/`. Reported messages need a consent ADR first (proseio#121).
@@ -12,4 +12,4 @@ On-device models for Proseio. See README.md.
 
 ## Decisions
 
-Product and architecture decisions for all Proseio repos are ADRs in the umbrella repo: `../proseio/docs/adr/` (index: `README.md`).
+Product and architecture decisions for all Bipe repos are ADRs in the umbrella repo: `../proseio/docs/adr/` (index: `README.md`).

@@ -1,6 +1,6 @@
-# proseio-ml
+# bipe-ml
 
-On-device models for Proseio. First model: the pt-BR scam classifier that extends security rule 9 ([proseio#121](https://github.com/bipe-chat/proseio/issues/121)). Research: [proseio/docs/ai.md](https://github.com/bipe-chat/proseio/blob/main/docs/ai.md).
+On-device models for Bipe. First model: the pt-BR scam classifier that extends security rule 9 ([proseio#121](https://github.com/bipe-chat/proseio/issues/121)). Research: [proseio/docs/ai.md](https://github.com/bipe-chat/proseio/blob/main/docs/ai.md).
 
 Status (12 October 2026): labelled set and rule baseline done. Training not run: the dev Mac has no ML toolchain.
 
@@ -53,6 +53,6 @@ A message counts as flagged when `scamWarningKind()` returns any kind.
 
 ## Rules
 
-- On the device only. No content, score or match leaves the phone (proseio security rule 9 and rule 13).
+- On the device only. No content, score or match leaves the phone (security rule 9 and rule 13).
 - The classifier runs after the rules. It adds warnings; it never removes a rule warning.
-- A shipped model and its test vectors go to `proseio-shared`, so iOS and Android pass the same vectors (proseio ADR 0031).
+- A shipped model and its test vectors go to `proseio-shared`, so iOS and Android pass the same vectors (ADR 0031 in proseio/docs/adr).
