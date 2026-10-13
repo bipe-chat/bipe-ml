@@ -4,6 +4,7 @@
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadAll } from "./data.mjs";
+import { evaluateRows, percent } from "./metrics.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const shared = process.env.BIPE_SHARED ?? join(root, "..", "bipe-shared");
@@ -13,23 +14,17 @@ const reg = loadRegistries(shared);
 const which = process.argv.find((a) => a === "train" || a === "test");
 const showMisses = process.argv.includes("--misses");
 const sets = loadAll(root);
-const pct = (a, b) => (b ? ((100 * a) / b).toFixed(1) + "%" : "-");
-
 for (const name of which ? [which] : ["train", "test"]) {
-  const rows = sets[name].map((r) => ({ ...r, flagged: scamWarningKind(r.text, reg) !== null }));
-  const scam = rows.filter((r) => r.label === "scam"), benign = rows.filter((r) => r.label === "benign");
-  const tp = scam.filter((r) => r.flagged).length, fp = benign.filter((r) => r.flagged).length;
-  console.log(`\n${name}: recall ${pct(tp, scam.length)} (${tp}/${scam.length}), false alarms ${pct(fp, benign.length)} (${fp}/${benign.length}), precision ${pct(tp, tp + fp)}`);
-  const byKind = {};
-  for (const r of rows) (byKind[`${r.label}/${r.kind}`] ??= []).push(r);
-  for (const [k, rs] of Object.entries(byKind).sort()) {
-    const f = rs.filter((r) => r.flagged).length;
-    console.log(`  ${k.padEnd(22)} flagged ${String(f).padStart(2)}/${rs.length}`);
+  const result = evaluateRows(sets[name], (text) => scamWarningKind(text, reg));
+  console.log(`\n${name}: recall ${percent(result.recall)} (${result.truePositive}/${result.scam}), false alarms ${percent(result.falsePositiveRate)} (${result.falsePositive}/${result.benign}), precision ${percent(result.precision)}`);
+  for (const label of ["benign", "scam"]) for (const group of result.byKind) {
+    const total = group[label], flagged = label === "scam" ? group.flaggedScam : group.flaggedBenign;
+    if (total) console.log(`  ${`${label}/${group.kind}`.padEnd(22)} flagged ${String(flagged).padStart(2)}/${total}`);
   }
   if (showMisses) {
     console.log("  missed scams:");
-    for (const r of scam.filter((r) => !r.flagged)) console.log(`    [${r.kind}] ${r.text}`);
+    for (const ref of result.failures.missedScams) console.log(`    [${ref.kind}] ${sets[name][ref.row - 1].text}`);
     console.log("  false alarms:");
-    for (const r of benign.filter((r) => r.flagged)) console.log(`    [${r.kind}] ${r.text} -> ${scamWarningKind(r.text, reg)}`);
+    for (const ref of result.failures.falseAlarms) console.log(`    [${ref.kind}] ${sets[name][ref.row - 1].text} -> ${ref.warning}`);
   }
 }

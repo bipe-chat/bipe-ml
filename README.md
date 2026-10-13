@@ -12,6 +12,8 @@ Status (12 October 2026): labelled set and rule baseline done. Training not run:
 | `eval/data.mjs` | Loads and validates the sets. Fails closed on a bad row, an unknown kind or a duplicate across sets |
 | `eval/check.mjs` | Counts per label and kind |
 | `eval/baseline.mjs` | Runs the rule 9 reference detector from `../bipe-shared` over the sets |
+| `eval/report.mjs` | Reproducible JSON and Markdown reports with input hashes, per-kind coverage and failure row references |
+| `docs/evaluation.md` | Independent holdout protocol, labels, context gates and warning-comprehension research |
 | `train/train.py` | Fine-tunes an encoder, picks the threshold on train, evaluates on test, exports int8 ONNX. **Not run yet** |
 
 ## Commands
@@ -20,6 +22,15 @@ Status (12 October 2026): labelled set and rule baseline done. Training not run:
 node eval/check.mjs
 node eval/baseline.mjs --misses
 ```
+
+Reproducible reports and evaluator tests:
+
+```bash
+node eval/report.mjs
+node --test eval/*.test.mjs
+```
+
+Reports go to `build/evaluation/` (ignored). Full protocol: [docs/evaluation.md](docs/evaluation.md). A null rate means no examples, not successful detection. Reports evaluate text rules only; app context gates and user actions require separate evidence.
 
 Training, after the toolchain is installed (Python 3.12 venv, `train/requirements.txt`):
 
@@ -51,7 +62,7 @@ A message counts as flagged when `scamWarningKind()` returns any kind.
 
 - The rules target money requests with a Pix key, code or fixed phrase. Fake bank, fake job, fake sale, fake benefit and fake delivery messages get 0 flags. Most `falsoParente` paraphrases get past the fixed phrase list ("mudei de número", "zap novo", "chip novo").
 - False alarms come from single words in `urgencyPhrases`: "urgente", "me empresta", "hoje ainda", "depois te explico", "te pago amanha".
-- In the app the detector runs only on messages from unverified, new or changed accounts. These rates count every message, so real false alarms are lower.
+- These rates count every message. App sender gates and their live effect are not measured here; the warning policy is tracked in bipe#146.
 
 ## Rules
 
