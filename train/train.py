@@ -1,5 +1,5 @@
 """Fine-tune a pt-BR encoder on data/train.jsonl, evaluate on data/test.jsonl,
-export int8 ONNX. NOT RUN YET: no ML toolchain on the dev Mac (proseio#121).
+export int8 ONNX. NOT RUN YET: no ML toolchain on the dev Mac (bipe#121).
 
 Usage: python -I train/train.py --model tgsc/debertina-xsmall --out build/debertina-xsmall
 """

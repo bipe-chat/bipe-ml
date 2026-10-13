@@ -1,4 +1,4 @@
-// Runs the rule 9 reference detector (proseio-shared) over the labelled sets.
+// Runs the rule 9 reference detector (bipe-shared) over the labelled sets.
 // A message counts as flagged when scamWarningKind() returns any kind.
 // Usage: node eval/baseline.mjs [train|test] [--misses]
 import { dirname, join } from "node:path";
@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { loadAll } from "./data.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const shared = process.env.BIPE_SHARED ?? join(root, "..", "proseio-shared");
+const shared = process.env.BIPE_SHARED ?? join(root, "..", "bipe-shared");
 const { loadRegistries, scamWarningKind } = await import(join(shared, "tools/lib/registries.mjs"));
 const reg = loadRegistries(shared);
 

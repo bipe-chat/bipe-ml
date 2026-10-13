@@ -1,6 +1,6 @@
 # bipe-ml
 
-On-device models for Bipe. First model: the pt-BR scam classifier that extends security rule 9 ([proseio#121](https://github.com/bipe-chat/proseio/issues/121)). Research: [proseio/docs/ai.md](https://github.com/bipe-chat/proseio/blob/main/docs/ai.md).
+On-device models for Bipe. First model: the pt-BR scam classifier that extends security rule 9 ([bipe#121](https://github.com/bipe-chat/bipe/issues/121)). Research: [bipe/docs/ai.md](https://github.com/bipe-chat/bipe/blob/main/docs/ai.md).
 
 Status (12 October 2026): labelled set and rule baseline done. Training not run: the dev Mac has no ML toolchain.
 
@@ -11,7 +11,7 @@ Status (12 October 2026): labelled set and rule baseline done. Training not run:
 | `data/train.jsonl`, `data/test.jsonl` | Labelled messages: `text`, `label` (`scam`, `benign`), `kind` |
 | `eval/data.mjs` | Loads and validates the sets. Fails closed on a bad row, an unknown kind or a duplicate across sets |
 | `eval/check.mjs` | Counts per label and kind |
-| `eval/baseline.mjs` | Runs the rule 9 reference detector from `../proseio-shared` over the sets |
+| `eval/baseline.mjs` | Runs the rule 9 reference detector from `../bipe-shared` over the sets |
 | `train/train.py` | Fine-tunes an encoder, picks the threshold on train, evaluates on test, exports int8 ONNX. **Not run yet** |
 
 ## Commands
@@ -38,7 +38,7 @@ python -I train/train.py --model tgsc/debertina-xsmall --out build/debertina-xsm
 Scam kinds: `falsoParente`, `fakeBank`, `codeTheft`, `fakeJob`, `fakeSale`, `fakeBenefit`, `fakeDelivery`, `overpayment`, `investment`, `fakeBoleto`, `fakeSupport`, `romance`, `fakeCharity`.
 Benign kinds: `family`, `friends`, `seller`, `condo`, `school`, `work`, `numberChange`.
 
-## Baseline: rule 9 as of proseio-shared `a5b1728`
+## Baseline: rule 9 as of bipe-shared `a5b1728`
 
 A message counts as flagged when `scamWarningKind()` returns any kind.
 
@@ -55,4 +55,4 @@ A message counts as flagged when `scamWarningKind()` returns any kind.
 
 - On the device only. No content, score or match leaves the phone (security rule 9 and rule 13).
 - The classifier runs after the rules. It adds warnings; it never removes a rule warning.
-- A shipped model and its test vectors go to `proseio-shared`, so iOS and Android pass the same vectors (ADR 0031 in proseio/docs/adr).
+- A shipped model and its test vectors go to `bipe-shared`, so iOS and Android pass the same vectors (ADR 0031 in bipe/docs/adr).
