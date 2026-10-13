@@ -78,3 +78,10 @@
 {"text":"amanhã tem vacinação no posto, levem a carteirinha","label":"benign","kind":"condo"}
 {"text":"pai o carro fez barulho de novo, levei no mecânico","label":"benign","kind":"family"}
 {"text":"te devolvo a forma do bolo domingo","label":"benign","kind":"friends"}
+{"text":"Seu CPF tem pendência na Receita. Regularize em receita-cpf.online","label":"scam","kind":"fakeAgency"}
+{"text":"Pra cancelar a compra, instala o app de proteção pelo link protecao-cartao.app e me fala o código","label":"scam","kind":"remoteAccess"}
+{"text":"Se não mandar 3 mil no pix agora, todo mundo vai ver seu vídeo","label":"scam","kind":"sextortion"}
+{"text":"Sei onde seu filho estuda. Faz o pix hoje ainda e fica tudo bem","label":"scam","kind":"threats"}
+{"text":"Suporte Bipe: me informe o código que chegou no seu e-mail pra evitar o bloqueio","label":"scam","kind":"fakeSupport"}
+{"text":"Qual é a senha do wifi daí? A minha não conecta","label":"benign","kind":"friends"}
+{"text":"Te mando o link do AnyDesk do trabalho pra você acessar o servidor amanhã","label":"benign","kind":"work"}

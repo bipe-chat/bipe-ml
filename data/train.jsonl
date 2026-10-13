@@ -234,3 +234,30 @@
 {"text":"Apaga aquela foto do grupo da família, ficou feia","label":"benign","kind":"sextortion"}
 {"text":"O sorteio da rifa da escola é sábado, na quadra","label":"benign","kind":"groupScam"}
 {"text":"O Pix da marmita é a chave que está no meu perfil verificado","label":"benign","kind":"pix"}
+{"text":"Seu benefício do INSS foi suspenso. Regularize em meu-inss-beneficio.online","label":"scam","kind":"fakeAgency"}
+{"text":"Restituição do IR liberada. Consulte o lote em receita-restituicao.site","label":"scam","kind":"fakeAgency"}
+{"text":"Valores esquecidos no Banco Central: resgate hoje em valoresareceber-bcb.site","label":"scam","kind":"fakeAgency"}
+{"text":"Multa do DETRAN com desconto de 40% só até hoje: detran-sp-multas.top","label":"scam","kind":"fakeAgency"}
+{"text":"Sua conta foi bloqueada. Atualize o cadastro em bb-atualiza.app","label":"scam","kind":"phishing"}
+{"text":"Acesse gov-br-servicos.site pra liberar seu CPF","label":"scam","kind":"phishing"}
+{"text":"Vi a receita de pão de queijo no site receitasdavovo.com.br, faz domingo?","label":"benign","kind":"phishing"}
+{"text":"Paguei o IPVA pelo site detran.sp.gov.br, foi rápido","label":"benign","kind":"fakeAgency"}
+{"text":"Aqui é da central do cartão. Pra bloquear a compra, baixa o AnyDesk e me passa o número que aparecer","label":"scam","kind":"remoteAccess"}
+{"text":"Instala esse app de segurança do banco pelo link seguranca-conta.app que eu te ajudo a cancelar","label":"scam","kind":"remoteAccess"}
+{"text":"Pra receber o estorno, instale o TeamViewer e me fala o código","label":"scam","kind":"remoteAccess"}
+{"text":"Baixa o app da escola pra ver o boletim do Pedro","label":"benign","kind":"remoteAccess"}
+{"text":"O pessoal da TI vai instalar o programa novo no seu notebook amanhã","label":"benign","kind":"remoteAccess"}
+{"text":"Instala o app do banco direto pela loja, aí você vê o extrato","label":"benign","kind":"remoteAccess"}
+{"text":"Tenho prints das suas conversas. Manda 1.500 no pix até as 18h ou mando pra sua família","label":"scam","kind":"sextortion"}
+{"text":"Se não pagar hoje vou postar suas fotos em todos os grupos","label":"scam","kind":"sextortion"}
+{"text":"Kkkk se você postar aquela foto minha eu te mato","label":"benign","kind":"sextortion"}
+{"text":"Sei onde você trabalha. Deposita 2 mil reais hoje ou vai se arrepender","label":"scam","kind":"threats"}
+{"text":"Tenho seu CPF e seu endereço. Faz o pix de 800 que eu apago tudo","label":"scam","kind":"threats"}
+{"text":"Me paga a pizza senão vou contar pra todo mundo que você perdeu no truco kkk","label":"benign","kind":"threats"}
+{"text":"Sei onde você mora, passo aí sábado pra ver o jogo","label":"benign","kind":"threats"}
+{"text":"Aqui é do suporte do Bipe. Pra manter sua conta ativa, me passa a senha de 8 números","label":"scam","kind":"fakeSupport"}
+{"text":"Equipe Bipe: confirme seu código de acesso respondendo esta mensagem","label":"scam","kind":"fakeSupport"}
+{"text":"Atendimento Bipe aqui. Qual a sua senha? Preciso pra liberar a conta","label":"scam","kind":"fakeSupport"}
+{"text":"Me passa a senha do wifi da casa nova?","label":"benign","kind":"fakeSupport"}
+{"text":"O suporte de TI pediu pra trocar a senha do e-mail até sexta","label":"benign","kind":"fakeSupport"}
+{"text":"Esqueci minha senha do Bipe, como faço pra criar outra?","label":"benign","kind":"fakeSupport"}
