@@ -10,7 +10,11 @@ import { evaluateRows, percent } from './metrics.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const shared = resolve(process.env.BIPE_SHARED ?? join(root, '..', 'bipe-shared'));
 const evaluatorFiles = ['eval/data.mjs', 'eval/metrics.mjs', 'eval/baseline.mjs', 'eval/report.mjs'];
-const detectorFiles = ['tools/lib/registries.mjs', 'product/scams.json', ...readdirSync(join(shared, 'registries')).sort().map((name) => `registries/${name}`)];
+function detectorFiles() {
+  return ['product/scams.json', 'strings/pt-BR.json', 'strings/en.json',
+    ...readdirSync(join(shared, 'tools/lib')).filter((name) => name.endsWith('.mjs')).sort().map((name) => `tools/lib/${name}`),
+    ...readdirSync(join(shared, 'registries')).sort().map((name) => `registries/${name}`)];
+}
 
 export async function buildReport() {
   const inputs = fingerprints();
@@ -23,7 +27,7 @@ export async function buildReport() {
     sources: {
       dataset: source(root, ['data/train.jsonl', 'data/test.jsonl']),
       evaluator: source(root, evaluatorFiles),
-      detector: source(shared, detectorFiles),
+      detector: source(shared, detectorFiles()),
     },
     limitations: [
       'Synthetic seed data from one authoring process; it is not an independently reviewed holdout.',
@@ -61,7 +65,7 @@ function hashes(base, files) {
 }
 
 function fingerprints() {
-  return { dataset: hashes(root, ['data/train.jsonl', 'data/test.jsonl']), evaluator: hashes(root, evaluatorFiles), detector: hashes(shared, detectorFiles) };
+  return { dataset: hashes(root, ['data/train.jsonl', 'data/test.jsonl']), evaluator: hashes(root, evaluatorFiles), detector: hashes(shared, detectorFiles()) };
 }
 
 function source(base, files) {
