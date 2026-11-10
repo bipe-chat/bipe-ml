@@ -44,7 +44,7 @@ python -I train/train.py --model tgsc/debertina-xsmall --out build/debertina-xsm
 - **Test set:** written apart from the train set with different wording. Never tune on it.
 - **Benign set:** hard negatives on purpose. Normal chat that talks about money, Pix, new numbers, urgency and codes.
 - **13 October 2026 (bipe#175):** scam kinds moved to the golpe ids of `bipe-shared/product/scams.json`. Existing rows were relabelled one by one (for example a code request became `wrongCode` or `numberTaken`, a link to a fake bank page became `phishing`). 53 new train rows: scam examples for the golpes that had fewer than 3, and one hard negative per golpe.
-- **Size:** 236 train, 80 test. Too small for a shipped model. It proves the pipeline and gives a baseline. A shipped model needs thousands of rows: FraudWhatsApp.Br (licence pending), more synthetic data, and reviewed reports.
+- **Size:** 263 train, 87 test (10 November 2026, `node eval/check.mjs`). Too small for a shipped model. It proves the pipeline and gives a baseline. A shipped model needs thousands of rows: FraudWhatsApp.Br (licence pending), more synthetic data, and reviewed reports.
 - **Bias:** one author wrote train and test. Scores on this test set are optimistic for any model.
 
 Scam kinds: the `id` of each golpe in `bipe-shared/product/scams.json` `types` (one list, bipe#175). `eval/data.mjs` reads them from there (`BIPE_SHARED` or the sibling folder) and fails on an unknown kind.
